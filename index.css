@@ -234,11 +234,11 @@ body {
 
   .intro {
   position: absolute;
-  top: 90px;
+  top: 100px;
   left: 50%;
   transform: translateX(-50%);
   color: #d8f536;
-  font-size: 20px;
+  font-size: 23px;
   font-weight: 400;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
