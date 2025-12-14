@@ -10,13 +10,14 @@
 body {
   min-height: 100vh;
   display: flex;
+  flex-direction: column; 
   justify-content: center;
   align-items: center;
   background-image: url('/images/moun.png');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover; /* ✅ fixed */
-  padding: 20px; /* ✅ adds breathing space on small screens */
+  background-size: cover;
+  padding: 20px;
 }
 
 .container {
@@ -28,7 +29,6 @@ body {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* SEARCH BOX */
 .search-box {
   width: 100%;
   display: flex;
@@ -68,7 +68,6 @@ body {
   cursor: pointer;
 }
 
-/* WEATHER SECTION */
 .weather-body {
   display: none;
   flex-direction: column;
@@ -105,13 +104,13 @@ body {
   margin-top: 5px;
 }
 
-/* WEATHER DETAILS */
+
 .weather-details {
   display: flex;
   width: 100%;
   justify-content: space-between;
   margin-top: 30px;
-  flex-wrap: wrap; /* ✅ ensures layout doesn't break on small screens */
+  flex-wrap: wrap; 
 }
 
 .humidity,
@@ -119,7 +118,7 @@ body {
   display: flex;
   align-items: center;
   margin: 10px 0;
-  flex: 1 1 45%; /* ✅ adaptive width */
+  flex: 1 1 45%; 
   justify-content: center;
 }
 
@@ -137,7 +136,7 @@ body {
   font-weight: 700;
 }
 
-/* LOCATION NOT FOUND */
+
 .location-not-found {
   margin-top: 20px;
   display: none;
@@ -158,7 +157,7 @@ body {
   color: red;
 }
 
-/* ✅ RESPONSIVE STYLES */
+
 @media (max-width: 768px) {
   .container {
     padding: 20px;
@@ -198,7 +197,7 @@ body {
   }
 
   .search-box {
-    flex-direction: column; /* ✅ stack input and button */
+    flex-direction: column;
     gap: 8px;
   }
 
@@ -231,4 +230,17 @@ body {
   .wind {
     flex: 1 1 100%;
   }
+
+
+  .intro {
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #d8f536;
+  font-size: 20px;
+  font-weight: 400;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
 }
